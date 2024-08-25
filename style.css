@@ -1,0 +1,204 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+
+}
+
+body {
+
+    background: linear-gradient(135deg, #f4f4f4 25%, #e1e1e1 100%);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 16px;
+
+}
+
+header {
+
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+header .logo {
+
+    width: 50px;
+    vertical-align: middle;
+
+}
+
+header h1 {
+
+    display: inline;
+    margin-left: 10px;
+    font-size: 1.8rem;
+    vertical-align: middle;
+
+}
+
+main {
+
+    flex: 1;
+    padding: 20px;
+
+}
+
+.converter {
+
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+    animation: fadeIn 1s ease-in-out;
+
+}
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(-20px);
+
+    }
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
+
+.currency, .amount {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+label {
+
+    flex: 1;
+    font-size: 1.1rem;
+
+}
+
+select, input {
+
+    flex: 2;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+
+}
+
+select:focus, input:focus {
+
+    border-color: #007bff;
+
+}
+
+button {
+
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+
+}
+
+button:hover {
+
+    background-color: #0056b3;
+
+}
+
+.result {
+
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.history {
+
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.2s ease-in-out;
+
+}
+
+.history h2 {
+
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+
+}
+
+#history-list {
+
+    list-style: none;
+    max-height: 150px;
+    overflow-y: auto;
+
+}
+
+#history-list li {
+
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#history-list li:last-child {
+
+    border-bottom: none;
+
+}
+
+#clear-history-btn {
+
+    background-color: #dc3545;
+    margin-top: 15px;
+
+}
+
+footer {
+
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    
+}
